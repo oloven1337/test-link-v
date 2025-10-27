@@ -34,7 +34,6 @@
         Просмотреть apple-app-site-association
     </a>
 
-<!-- Кнопка с проверкой -->
 <button onclick="openApp()">Открыть в приложении</button>
 
 </body>
@@ -42,17 +41,15 @@
 <script>
     function openApp() {
       const appUrl = 'veles://open-ios-app';
-      const appStoreUrl = 'https://apps.apple.com/app/id6752661666'; // ваш App Store URL
+      const appStoreUrl = 'https://apps.apple.com/app/id6752661666';
       
-      // Пытаемся открыть приложение
       window.location.href = appUrl;
       
-      // Если через 2 секунды пользователь все еще на странице - переходим в App Store
       setTimeout(() => {
         if (!document.hidden) {
           window.location.href = appStoreUrl;
         }
-      }, 2000);
+      }, 100);
     }
     </script>
 </html>
