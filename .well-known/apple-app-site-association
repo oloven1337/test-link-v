@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "FJMM38N232.finance.veles",
+        "components": [
+          {
+            "/": "/open-ios-app"
+          }
+        ]
+      }
+    ]
+  }
+}
